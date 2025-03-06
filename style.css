@@ -21,7 +21,7 @@
   box-sizing: border-box;
   font-family: 'Barlow Semi Condensed';
   font-size: 13px;
-  font-style: 500;
+  font-weight: 500;
 }
 
 .container{
@@ -40,6 +40,11 @@
   padding: 36px;
   gap: 1rem;
   box-shadow: 20px 20px 50px 0px var(--Grey-200);
+  font-weight: 600;
+}
+
+.svg-quote{
+  display: none;
 }
 
 .testimonials:first-child{
@@ -111,9 +116,23 @@ header{
     width: 100%;
   }
 
+  .svg-quote{
+    display: block;
+    position: absolute;
+    right: 55px;
+    top: 0px;
+    z-index: 0;
+  }
+
   .testimonials:first-child{
+    position: relative;
     grid-area: first;
     margin-top: 0;
+  }
+
+  .testimonial-title{
+    position: relative;
+    z-index: 2;
   }
   
   .testimonials:nth-child(2){
