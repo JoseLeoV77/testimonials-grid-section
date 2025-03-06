@@ -112,7 +112,8 @@ header{
   }
 
   .testimonials:first-child{
-    grid-area: first
+    grid-area: first;
+    margin-top: 0;
   }
   
   .testimonials:nth-child(2){
